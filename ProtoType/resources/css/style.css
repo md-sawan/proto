@@ -1,0 +1,588 @@
+/*================================
+Templete name : Web_Devloper
+Templete URI : https://www.web-devloper.com
+Author Name : MD SAWAN KHAN
+Author URI : https://www.md-sawankhan.com
+Version : 1.0.0
+Description : A Simple Web Devloper Web Site
+==================================*/
+
+
+
+/*==============================
+    0. Index Of
+    1. Common CSS
+    2. Reuseable Component
+    3. Header Section
+    4. About Section
+    5. Design Section
+    6. Community Section
+    7. Form  Section
+    8. Download Section
+    9. Footer Section
+
+===============================*/
+
+
+/*=============================
+    1. Common CSS
+===============================*/
+html{
+    font-size:62.5%;
+    text-rendering: optimizeLegibility;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    color: #000;
+    font-family: Tahoma, sans-serif;
+}
+.container{
+    margin: 0 auto;
+    max-width:100rem;
+    width: 96%;
+    
+}
+h1,h2,h3,h4,h5,h6{
+    color: #000;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+
+/*=============================
+    2. Reuseable Component
+===============================*/
+
+
+
+
+
+/*=============================
+    3. Header Section
+===============================*/
+
+#header{
+    height: 100vh;
+    background: #271b27 url(../img/main.png) no-repeat center bottom/ cover;
+    position: relative;
+}
+.navigation{
+    padding-top: 2rem;
+    height: 5rem;
+    width:80rem;
+    margin: 0 auto;
+    text-align: center;
+
+}
+.nav-links li{
+   display: inline-block;
+   justify-content: space-between;
+   padding: 0 4rem; 
+}
+.nav-links li a{
+    color: #fff;
+    font-size: 1.6rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all .3s;
+}
+.nav-links li a img{
+   width: 5rem;
+   height: 5rem;
+   cursor: pointer;
+}
+.nav-links li:hover a{
+    color:#C60000 ;  
+
+}
+
+.main-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    text-align: center;
+}
+.main-content h1{
+    color: #fff;
+    font-size: 4rem;
+    text-transform: uppercase;
+    letter-spacing: .3rem;
+}
+.main-content p{
+    color: #fff;
+    font-size: 1.6rem;
+    letter-spacing: .3rem;
+    font-weight: 500;
+}
+.header-button{
+    margin: 40px 0;
+}
+.btn{
+    background-color: #16a085;
+    border: none;
+    height: 4.5rem;
+    width: 15rem;
+    color: #fff;
+    border-radius: .3rem;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: .3rem;
+    font-size: 1.2rem;
+    transition: all .2s;
+}
+.btn:hover{
+background-color: #0d6856;
+}
+.social-icon{
+    position: absolute;
+    bottom: 2.5rem;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+.social-icon ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding-right:1.5rem;  
+    
+}
+.social-icon ul li a ion-icon{
+    text-align: center;
+    color:#fff ;
+    font-size: 2rem;
+    background-color:#271b27;
+    padding: 1rem;
+    border-radius:.5rem;
+    transition: all .2s;
+    
+}
+.social-icon ul li a ion-icon:hover{
+    color: #b60d0d;
+    transform: scale(1.1);
+}
+
+
+
+/*=============================
+    4. About Section
+===============================*/
+
+#about{
+    height: 49rem;
+    background:#f5f6f7 url(../img/About\ Section.jpg) no-repeat right top/ cover;
+}
+.about-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1rem;
+}
+.about-grid-item{
+    padding: 11rem 0;
+    
+}
+.about-grid-item h3{
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    color: #16a085;
+    margin-bottom: 4.5rem;
+}
+.about-grid-item p{
+    font-size: 1.2rem;
+    word-spacing: .3rem;
+    line-height: 1.8rem;
+    margin-bottom: 4.5rem;
+}
+
+
+
+
+
+/*=============================
+    5. Design Section
+===============================*/
+
+#design{
+    position: relative;
+    
+
+}
+.grid-design{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 5rem;
+   
+
+}
+.grid-design-item{
+    padding-top: 14rem;
+    padding-bottom: 10rem;
+
+}
+.sw-grid{
+    width: 50rem;
+    height: 40rem;
+    position: absolute;
+    top: 15%;
+    left: 5%;
+   
+}
+.sd-box img{
+    position: absolute;
+    top: 25%;
+    left: 20%;
+}
+.grid-design-item:nth-child(2){
+    margin-left: 3rem;
+    text-align:left;
+}
+.grid-design-item h4{
+    font-size: 1.8rem;
+    color: #16a085;
+    margin-bottom: 4rem;
+}
+.grid-design-item p{
+    font-size: 1.2rem;
+    line-height: 1.9rem;
+    word-spacing: .2rem;
+    margin-bottom: 4rem;
+}
+.swiper-pagination{
+    position: absolute;
+    top: 29rem;
+}
+
+.swiper-horizontal > .swiper-scrollbar{
+    z-index:0;
+    height: 0;
+    position: absolute;
+    top: 31rem;
+    
+}
+
+
+
+/*===========================
+    6. Community Section 
+============================*/
+
+#community{
+    height:50rem;
+    width: 100%;
+    background-color: #271b27;
+    position: relative;
+    padding: 12rem 0;
+
+}
+.community-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-gap: 2rem;
+}
+.community-grid-item:nth-child(1){
+    width: 35rem;
+    position: absolute;
+    left: 10rem;
+    text-align: center;
+
+}
+.community-grid-item img{
+    height: 6rem;
+    width: 6rem;
+    margin-bottom: 1.5rem;
+}
+.community-grid-item h3{
+    color:#b9b9ba;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    letter-spacing: .5rem;
+}
+.community-grid-item p{
+    color: #a2a2a3;
+    font-size: 1.2rem;
+    word-spacing: .1rem;
+    line-height: 2rem;
+}
+
+.iframe{
+    position: absolute;
+    right: 10rem;
+    bottom: 5rem;
+}
+
+
+
+
+
+/*=============================
+    7. Form  Section
+===============================*/
+
+#input{
+    height: 65rem;
+    width: 100%;
+    background:  url(../img/input.jpg) no-repeat center top/cover fixed;
+    position: relative;
+}
+.input-position-item{
+    width: 30rem;
+    height:45rem;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 60%;
+    left:50%;
+    transform: translate(-50%, -50%);
+
+}
+.input-position h2{
+   text-align: center;
+   color: #b60d0d;
+   text-transform: uppercase;
+   padding: 8rem 0;
+   font-size: 2.4rem;
+}
+.input-position-item h3{
+    color: #fff;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+    padding-top: 3rem;
+
+}
+form input[type="text"],
+form input[type="email"],
+form input[type="password"]{
+    width: 80%;
+    margin: auto;
+    padding:1.2rem ;
+    margin-bottom:1rem;
+    margin-left: 2.5rem;
+    background: transparent;
+    border: .1rem solid black;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="password"]::placeholder{
+    color: #fff;
+    font-size: 1.4rem;
+    font-style: italic;
+    letter-spacing: .2rem;
+}
+form .forget{
+    color: #fff;
+    font-size: 1.6rem;
+    padding-left: 2.7rem;
+}
+a:hover{
+    text-decoration: none;
+}
+.fr-btn{
+    width: 80%;
+    margin-left: 2.6rem;
+    padding: 1rem;
+    background: #187abb;
+    color: #fff;
+    font-size: 1.6rem;
+    font-weight: 600;
+    letter-spacing: .1rem;
+    border: none;
+    margin-top: 1rem;
+}
+.after-login{
+    display: inline-block;
+    padding-top: 1rem;
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding-left: 10rem;
+}
+.fb-btn{
+    width: 38%;
+    display: inline-block;
+    margin-left: 3rem;
+    padding: 1rem;
+    background: #4167b1;
+    color: #fff;
+    font-size: 1.2rem;
+    border: none;
+    margin-right: .5rem;
+    margin-top: 1.5rem;
+    cursor: pointer;
+}
+.fb-btn ion-icon{
+    margin-right: .5rem;
+}
+.inst-btn{
+    width: 38%;
+    display: inline-block;
+    padding: 1rem;
+    background: #e2306c;
+    color: #fff;
+    font-size: 1.2rem;
+    border: none;
+    margin-top: 1.5rem;
+    cursor: pointer;
+}
+.inst-btn ion-icon{
+    margin-right: .5rem;
+}
+.last-item{
+    font-size: 1.4rem;
+    margin-left:4rem;
+    margin-top: 1.5rem;
+    color: #fff;
+}
+
+
+
+
+
+/*=============================
+    8. Download Section
+===============================*/
+
+#download{
+    height: 45rem;
+    width: 100%;
+    background: #f5f6f7;
+    text-align: center;
+}
+
+.download-item{
+    padding: 7rem 0;
+    text-align: center;
+    position: relative;
+    
+}
+.download-item h3{
+    font-size: 2rem;
+    color: #373737;
+    letter-spacing: .3rem;
+    margin-bottom: 2rem;
+
+}
+
+
+
+/*============================================
+  DOWNLOAD BUTTON 
+============================================*/
+
+.apple-btn{
+
+ position: relative;
+   
+}
+.apple-btn button:hover{
+    background-color: #0d6856;
+}
+
+.apple-title{
+    padding: 1.5rem 4rem;
+    background-color: #1abc9c;
+    border-right: none;
+    border-top-left-radius: .5rem;
+    border-bottom-left-radius:.5rem;
+    font-size: 1.7rem;
+    color: #fff;
+    font-weight: bold;
+    letter-spacing: .2rem;
+    text-transform: uppercase;
+}
+
+
+.apple-logo{
+    position: absolute;
+    padding: 1.5rem 2rem;
+    background-color: #16a085;
+    border-left: none;
+    border-top-right-radius: .5rem;
+    border-bottom-right-radius:.5rem;
+    font-size: 1.7rem;
+    color: #fff;
+    
+}
+
+.android-btn{
+ position: relative;
+    
+}
+.android-btn button:hover{
+    background-color: #0d6856;
+}
+
+.andro-title{
+    padding: 1.5rem 4.5rem;
+    background-color: #1abc9c;
+    border-right: none;
+    border-top-left-radius: .5rem;
+    border-bottom-left-radius:.5rem;
+    font-size: 1.7rem;
+    color: #fff;
+    font-weight: bold;
+    letter-spacing: .2rem;
+    text-transform: uppercase;
+}
+
+.andro-logo{
+    position: absolute;
+    padding: 1.5rem 2rem;
+    background-color: #16a085;
+    border-left: none;
+    border-top-right-radius: .5rem;
+    border-bottom-right-radius:.5rem;
+    font-size: 1.7rem;
+    color: #fff;
+    
+}
+
+
+
+/*=============================
+    9. Footer Section
+===============================*/
+
+#footer{
+    height: 13rem;
+    background: #ffffff;
+}
+
+.footer-flex{
+    display: flex;
+    justify-content: space-between;
+}
+.footer-flex-item{
+    padding-top: 4.2rem;
+    
+}
+.list ul li{
+    list-style-type: none;
+    display: inline-block;
+}
+.list ul li a{
+    color: #4d4d4d;
+    font-size: 1.4rem;
+    font-weight: 600;
+    letter-spacing: .2rem;
+    border-right: 1px solid #72bcab;
+    padding: 0rem .7rem;
+}
+.list ul li:last-child a{
+    border: none;
+}
+.main-footer p{
+    padding-left: 3.5rem;
+    color: #4d4d4d;
+    font-size: 1.4rem;
+    letter-spacing: .2rem;
+}
+.footer-flex-item img{
+    background: #4fb7a3;
+}
